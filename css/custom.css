@@ -1,5 +1,6 @@
 body, html{
     font-family: 'Red Hat Display', sans-serif; 
+    scroll-behavior: smooth;
 }
 
 #header{
@@ -45,11 +46,11 @@ body, html{
   }
 
 p .btn-outline-dark:hover{
-    background-color: #dc3545;
+    background-color: hsl(354, 70%, 54%);
     border-style: none;
 }
 
-.titulo-main{
+#titulo-main{
     margin: 35px;
 }
 
@@ -65,4 +66,14 @@ p .btn-outline-dark:hover{
 .btn-primary:hover{
     background-color: #212529;;
     transition: 0.2s;
+}
+
+header .nav-link{
+    text-decoration: none;
+    color: #000;
+}
+
+header .nav-link:hover{
+    text-decoration: none;
+    color: #fff;
 }
