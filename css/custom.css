@@ -5,8 +5,10 @@ body, html{
 
 #header{
     width: 100%;
-    background-color: transparent;
+    background-color: white;
     transition: background ease-out 0.2s;
+    position: fixed;
+    z-index: 100;
 }
 
 #header .navbar-collapse{
@@ -34,10 +36,14 @@ body, html{
     height: 55px;
     width: 230px;
     margin-left: 65px;
+    z-index: 100;
 }
 
-.masthead {
-    height: calc(100vh - 81px);
+main{
+    top: 81px;
+}
+.banner-main > .masthead {
+    height: calc(100vh);
     min-height: 500px;
     background-image: url('../assets/banner.jpg');
     background-size: cover;
@@ -51,29 +57,75 @@ p .btn-outline-dark:hover{
 }
 
 #titulo-main{
-    margin: 35px;
+    margin: 30px 30px 0px;
 }
 
 .cards{
     margin-bottom: 30px;
 }
 
+.card:hover{
+    transform: scale(1.1);
+}
 .btn-primary{
    background-color: #dc3545;
    border-style: none;
+   z-index: 1;
 }
 
 .btn-primary:hover{
     background-color: #212529;;
     transition: 0.2s;
+    z-index: 1;
 }
 
 header .nav-link{
     text-decoration: none;
     color: #000;
+    z-index: 1;
 }
 
 header .nav-link:hover{
     text-decoration: none;
     color: #fff;
+    z-index: 1;
+}
+
+div > .masthead{
+    height: calc(100vh - 81px);
+    min-height: 500px;
+    background-image: url('../assets/lasanha.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.prato-titulo{
+    margin: 30px 0px;
+}
+
+div.video{
+    background-color: transparent;
+    position: relative;
+    padding-bottom: 50%;
+}
+
+div.video iframe{
+    position: absolute;
+    top:5%;
+    left: 5%;
+    width: 90% ;
+    height: 90%;
+    z-index: -1
+}
+.masthead{
+    top: 81px;
+}
+.sobre .masthead{
+    height: 100vh - 81px;;
+    min-height: 500px;
+    background-image: url('../assets/sobre.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
