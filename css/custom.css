@@ -40,7 +40,7 @@ body, html{
 }
 
 main{
-    top: 81px;
+    top: 85px;
 }
 .banner-main > .masthead {
     height: calc(100vh);
@@ -116,7 +116,6 @@ div.video iframe{
     left: 5%;
     width: 90% ;
     height: 90%;
-    z-index: -1
 }
 .masthead{
     top: 81px;
